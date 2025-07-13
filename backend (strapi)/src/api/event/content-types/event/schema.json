@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "eventName": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "string"
+    },
+    "eventDate": {
+      "type": "date",
+      "required": true
+    },
+    "startTime": {
+      "type": "time",
+      "required": true
+    },
+    "location": {
+      "type": "string"
+    },
+    "coverPhoto": {
+      "type": "string"
+    },
+    "bandOrArtistName": {
+      "type": "string",
+      "required": true
+    },
+    "eventId": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
