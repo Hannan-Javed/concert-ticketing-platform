@@ -49,6 +49,11 @@ There are some assumptions with this data model:
     - If there is any change in row, it checks if the event Id is null for that row. If yes, then it makes a DELETE request using the document Id. If not, then all the other changes are updated.
     - To implement creating tickets in sheets is a bit indirect. First a call is made to strapi from frontend to create an entry for a ticket. Then the response (with createdAt and documentId) is sent back to a webhook call in order to trigger the event in the workflow. This in turn updates the google sheets. This process is instant
     - Lastly, similar to changes in event row, the flow deletes or updates tickets based on changes in the tickets sheet
+  - **How to use**
+    - generate or input any event id along with other details and the data will automatically be updated for createdAt, updatedAt and documentId fields.
+    - To change, change the desired data without changing createdAt, updatedAt and documentId.
+    - To delete, delete eventId along with other details of event except documentId which is used to query and delete from strapi database (it can be deleted from the row some time later).
+    - Similar for handling tickets sheet
 ### 4. Frontend Development
 - **Technology**: Next.js
 - **Functionality**:
