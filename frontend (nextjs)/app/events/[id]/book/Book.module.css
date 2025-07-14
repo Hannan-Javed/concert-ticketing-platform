@@ -1,0 +1,84 @@
+/* Book.module.css */
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #232526, #2c5364, #0f2027);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 32rem; /* max-lg */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.label {
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.5rem;
+  font-weight: medium;
+}
+
+.input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 93%;
+  transition: outline 0.2s;
+}
+
+.input:focus {
+  outline: 2px solid #7c3aed;
+}
+
+.button {
+  padding: 1rem 1.5rem;
+  background: linear-gradient(to right, #5eead4, #7c3aed, #f472b6);
+  color: white;
+  font-weight: bold;
+  border-radius: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+}
+
+.success {
+  color: #5eead4;
+  margin-top: 1rem;
+}
+
+.saveMessage {
+  margin-top: 0.5rem;
+}
