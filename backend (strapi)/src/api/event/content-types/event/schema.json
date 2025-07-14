@@ -39,6 +39,10 @@
     "eventId": {
       "type": "string",
       "required": true
+    },
+    "eventNumber": {
+      "type": "integer",
+      "required": true
     }
   }
 }
