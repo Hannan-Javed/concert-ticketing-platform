@@ -393,6 +393,7 @@ export interface ApiEventEvent extends Struct.CollectionTypeSchema {
     eventDate: Schema.Attribute.Date & Schema.Attribute.Required;
     eventId: Schema.Attribute.String & Schema.Attribute.Required;
     eventName: Schema.Attribute.String;
+    eventNumber: Schema.Attribute.Integer & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::event.event'> &
       Schema.Attribute.Private;
